@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="rollovers.html" onmouseover="move_in('image1', 'ironman1.jpg')" onmouseout="move_out('image1', 'ironman2.jpg')">
+        <img src="ironman2.jpg" alt="Move your mouse over here!" name="image1" width="50%">
+    </a>
+
+    <script>
+        function move_in(img_name, img_src) {
+            document[img_name].src = img_src;
+        }
+
+        function move_out(img_name, img_src) {
+            document[img_name].src = img_src;
+        }
+    </script>
+</body>
+
+</html>
